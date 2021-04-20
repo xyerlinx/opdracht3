@@ -1,0 +1,93 @@
+/* hier komt jouw CSS */
+{
+      box-sizing: border-box;
+}
+
+body {
+      font-family: helvetica;
+      font-size: 4vw;
+      text-align: center;
+      background-color: #eee;
+}
+
+div {
+      padding-top: 17vw;
+}
+
+main {
+      width: 90vw;
+      height: 40vw;
+      margin: 10vw auto;
+      overflow: hidden;
+      position: relative;
+}
+
+div {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      animation-iteration-count: infinite;
+}
+
+.banner1 {
+      background-color: #00BFFF;
+      animation-name: zoom-in;
+      animation-duration: 10s;
+}
+
+.banner2 {
+      background-color: #90EE90;
+      left: -100%;
+      animation-name: zoom-out;
+      animation-duration: 10s;
+}
+
+.bg {
+  top: auto;
+  bottom: 500px;
+  animation-name: rechts;
+  animation-duration: 10s;
+
+
+}
+ .auto{
+   animation-name: rijd;
+   animation-duration: 10s;
+   animation-timing-function: linear;
+   top: 100px;
+   left: 4500px;
+ }
+
+
+@keyframes zoom-in {
+      20% {top: 0%;}
+      25% {transform: scale(1.5);
+        top: -150%;}
+      95% { transform: scale(0);
+        top: -100%;}
+      100% {top: 0%;}
+}
+
+@keyframes zoom-out {
+      20% {left: -100%;}
+      25% {transform: scale(0);
+        left: 0%;}
+      45% {transform: scale(1.5);
+        left: 0%;}
+      50% {left: -150%;}
+}
+
+@keyframes rechts {
+  0% {right: -500%;}
+ 45% {right: -100%;}
+  50% {right: 0%;}
+  70% {right: 0%;}
+  100% {right: -100%;}
+
+  }
+
+  @keyframes rijd {
+    75% {left: -100%;}
+    90% {right: -50%;}
+    100% {left: -200%;}
+}
